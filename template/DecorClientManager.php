@@ -9,7 +9,6 @@ require_once ('Client.php');
 class DecorClientManager
 {
 
-    /** GestionCourse **/
 
     private $_db; // Instance de PDO.
 
@@ -40,37 +39,24 @@ class DecorClientManager
     public function verifClient($email,$password)
     {
 
-        $req = $this->_db->query("select * from user where email='$email' AND password='$password'");
+        $req = $this->_db->query("select * from client where email='$email' AND password='$password'");
 
         $res = $req->fetch();
 
-        if ($res !=null) {
-            return new User($res['id'],$res['username'],$res['firstname'], $res['lastname'], $res['email'],$res['password'],
-                $res['address'],$res['image']);
-        } else
-            return null;
+        if ($res !=null)
 
+            return new client($res['_id'],$res['_firstname'], $res['_lastname'], $res['email'],$res['password']) ;
 
+           // header("location: php");index.
+           // return new User($res['id'],$res['username'],$res['firstname'], $res['lastname'], $res['email'],$res['password'],
+               // $res['address'],$res['image']);
 
-
-        /***if ($bdd = mysqli_connect('localhost', 'root', '', 'decoration')) {
-            echo "connexion réussi";
-            {
-                if ((isset ($_POST["login"])) && (isset($_POST["password"]))) {
-                    $nom = $_POST["nom"];
-                    //$password=$_POST["password"];
-                    $requette = "SELECT * FROM client WHERE nom='$nom' ";
-                    $result = mysqli_query($bdd, $requette);
-                    //$donnee = mysqli_fetch_assoc($result);
-                    $nb = mysqli_num_rows($result);
-                    if ($nb > 0)
-                        echo "welcome" . $_POST['nom'];
-                    else
-                        echo "vous n'étes pas inscri";
-                }
-            }
-        }*///
+         else
+             return null ;
+            //header("location: indexLogin.php");
     }
+
+
     public function addClient()
     {
         // Préparation de la requête d'insertion.
@@ -115,5 +101,3 @@ class DecorClientManager
     }**/
 }
 ?>
-
-}

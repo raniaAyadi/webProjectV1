@@ -17,8 +17,8 @@ class client
     private $_lastName;
     private $_email;
     private $_password;
-    private $_metier;
-    private $_shortDescription;
+    //private $_metier;
+   // private $_shortDescription;
 
     /**
      * equipe constructor.
