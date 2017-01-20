@@ -3,9 +3,9 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
     echo "connexion réussi";
     if  ((isset ($_POST["login"]) ) && (isset($_POST["password"])))
     {
-        $login=$_POST["login"];
+        $email=$_POST["login"];
         $password=$_POST["password"];
-        $requette="SELECT * FROM client WHERE login='$login' AND passeword='$password'";
+        $requette="SELECT * FROM client WHERE email='$login' AND passeword='$password'";
         $result=mysqli_query($bdd,$requette);
         $nb = mysqli_num_rows($result);
     }
