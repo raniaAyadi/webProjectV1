@@ -1,5 +1,7 @@
 <?php
 
+
+
 /**
  * Created by PhpStorm.
  * User: asus
@@ -11,10 +13,10 @@ class client
 
 
     private $_id;
-    private $_nom;
-    private $_prenom;
-    private $_telephone;
+    private $_firstName;
+    private $_lastName;
     private $_email;
+    private $_password;
     private $_metier;
     private $_shortDescription;
 
@@ -30,13 +32,13 @@ class client
      */
 
 
-    public function __construct($_id, $_nom, $_prenom, $_email,$_telephone )
+    public function __construct($_id, $_firstName, $_lastName, $_email,$_password)
     {
         $this->_id = $_id;
-        $this->_nom = $_nom;
-        $this->_prenom = $_prenom;
+        $this->_firstName = $_firstName;
+        $this->_lastName = $_lastName;
         $this->_email = $_email;
-        $this->_telephone = $_telephone;
+        $this->_password = $_password;
 
 
 
@@ -61,49 +63,49 @@ class client
     /**
      * @return mixed
      */
-    public function getNom()
+    public function getFirstNom()
     {
-        return $this->_nom;
+        return $this->_firstName;
     }
 
     /**
      * @param mixed $nom
      */
-    public function setNom($nom)
+    public function setFirstNom($firstName)
     {
-        $this->_nom = $nom;
+        $this->_firstName = $firstName;
     }
 
     /**
      * @return mixed
      */
-    public function getPrenom()
+    public function getLastNom()
     {
-        return $this->_prenom;
+        return $this->_lastName;
     }
 
     /**
      * @param mixed $prenom
      */
-    public function setPrenom($prenom)
+    public function setLastName($lastName)
     {
-        $this->_prenom = $prenom;
+        $this->_lastName = $lastName;
     }
 
     /**
      * @return mixed
      */
-    public function getTelephone()
+    public function getPassword()
     {
-        return $this->_telephone;
+        return $this->_password;
     }
 
     /**
      * @param mixed $field
      */
-    public function setTelephone($telephone)
+    public function setPassword($password)
     {
-        $this->_telephone = $telephone;
+        $this->_password = $password;
     }
 
     /**

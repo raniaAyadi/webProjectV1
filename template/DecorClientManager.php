@@ -1,5 +1,5 @@
 <?php
-
+require_once ('Client.php');
 /**
  * Created by PhpStorm.
  * User: asus
@@ -40,7 +40,20 @@ class DecorClientManager
     public function verifClient()
     {
 
-        if ($bdd = mysqli_connect('localhost', 'root', '', 'decoration')) {
+        $req = $this->_db->query("select * from user where email='$email' AND password='$password'");
+
+        $res = $req->fetch();
+
+        if ($res !=null) {
+            return new User($res['id'],$res['username'],$res['firstname'], $res['lastname'], $res['email'],$res['password'],
+                $res['address'],$res['image']);
+        } else
+            return null;
+
+
+
+
+        /***if ($bdd = mysqli_connect('localhost', 'root', '', 'decoration')) {
             echo "connexion réussi";
             {
                 if ((isset ($_POST["login"])) && (isset($_POST["password"]))) {
@@ -56,12 +69,12 @@ class DecorClientManager
                         echo "vous n'étes pas inscri";
                 }
             }
-        }
+        }*///
     }
     public function addClient()
     {
         // Préparation de la requête d'insertion.
-        if ($bdd = mysqli_connect('localhost', 'root', '', 'decoration')) {
+        /*if ($bdd = mysqli_connect('localhost', 'root', '', 'decoration')) {
             if ((isset ($_POST["nom"])) && (isset($_POST["prenom"])) && (isset($_POST["telephone"])) && (isset($_POST["email"]))) {
                 $nom = $_POST["nom"];
                 //$password = $_POST["password"];
@@ -74,7 +87,7 @@ class DecorClientManager
             // Exécution de la requête.
 
 
-        }
+        }*/
     }
     /****
     public function deleteCourse($id)
