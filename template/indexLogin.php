@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html >
 <head>
   <meta charset="UTF-8">
@@ -56,7 +57,7 @@
             <input type="password" name="password" required autocomplete="off"/>
           </div>
           
-          <button type="submit" class="button button-block"/>Get Started</button>
+          <button type="submit" class="button button-block" name="submit"/>Get Started</button>
           
           </form>
 

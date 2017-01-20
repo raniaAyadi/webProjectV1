@@ -33,16 +33,13 @@
 </head><!--/head-->
 
 <body>
-
 <?php
-//BDD
+
 $mySQLDatabase = new MySQLDatabase();
 $db = $mySQLDatabase->getConnection();
 
-//Manager
 $decorEquipeManager = new DecorEquipeManager($db);
 $decorMaisonManager= new DecorMaisonManager($db);
-
 ?>
   <!--.preloader-->
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
@@ -704,7 +701,7 @@ $decorMaisonManager= new DecorMaisonManager($db);
               <div class="post-meta">
 
 
-                      <button>
+                      <button class="button">
                       <span><i class="fa fa-comments-o"></i>3 Comments</span>
                       </button>
 

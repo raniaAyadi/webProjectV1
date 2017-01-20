@@ -15,7 +15,7 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
 
     }
     else
-        echo "vous " ;
+        echo "vous" ;
         //header('location:indexLogin.php');
     }
 

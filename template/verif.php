@@ -1,5 +1,5 @@
 <?php
- //session_start(); // Starting Session
+ session_start(); // Starting Session
 
 //require_once('MySQLDatabase.php');
 //require_once('DecorClientManager.php');
@@ -25,7 +25,7 @@ $postdata = json_decode($postdata);
 
 if($db=mysqli_connect('localhost','root','','decoration')){
     if (empty($_POST['email2']) || empty($_POST['password2'])) {
-        echo "Email or Password is invalid";
+        echo "email and password invalid";
     }
     else
     {
@@ -39,13 +39,14 @@ if($db=mysqli_connect('localhost','root','','decoration')){
 
         $requette="SELECT * FROM client WHERE email='$email' AND password='$password'";
         $result=mysqli_query($db,$requette);
+        $donnee=mysqli_fetch_assoc($result);
         $nb=mysqli_num_rows($result);
 
         //echo "wsel5" ;
 
         if ($nb==1) {
-           // $_SESSION['login_user']=$email; // Initializing Session
-           //  $_SESSION['user_id']=$client->getId();
+             $_SESSION['login_user']=$donnee['firstName']; // Initializing Session
+             $_SESSION['user_id']=$donnee['id'];
            header("location:index.php"); // Redirecting To Other Page
        }
        else {

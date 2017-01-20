@@ -39,21 +39,17 @@ class DecorClientManager
     public function verifClient($email,$password)
     {
 
-        $req = $this->_db->query("select * from client where email='$email' AND password='$password'");
+        $req = $this->_db->query('SELECT * FROM client WHERE email =\'' . $email . '\' AND password=\'' . $password . '\'');
 
         $res = $req->fetch();
 
-        if ($res !=null)
+        if ($res != null) {
+            return new Client($res['id'], $res['firstName'], $res['lastName'], $res['email'], $res['password']);
+        } else {
+            return null;
 
-            return new client($res['_id'],$res['_firstname'], $res['_lastname'], $res['email'],$res['password']) ;
+        }
 
-           // header("location: php");index.
-           // return new User($res['id'],$res['username'],$res['firstname'], $res['lastname'], $res['email'],$res['password'],
-               // $res['address'],$res['image']);
-
-         else
-             return null ;
-            //header("location: indexLogin.php");
     }
 
 
