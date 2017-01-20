@@ -7,11 +7,15 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
         $email=$_POST["email"];
         $password=$_POST["password"];
 
-        $requette="insert into client values ('$FirstName','$LastName','$email','$password')";
+        $requette="insert into client values ('$firstName','$lastName','$email','$password')";
         $result=mysqli_query($bdd,$requette);
          header('Location:index.php');
 
     }
-    else header('location:indexLogin.php');
+    else
+        echo "vous " ;
+        //header('location:indexLogin.php');
     }
+
+    else echo"connexion echou ";
     ?>
