@@ -1,16 +1,17 @@
 <?php
 if($bdd=mysqli_connect('localhost','root','','decoration')){
-    if  ((isset ($_POST["login"]) ) && (isset($_POST["password"]))&& (isset($_POST["nom"])) && (isset($_POST["prenom"])))
+    if  ((isset ($_POST["firstName"]) ) && (isset($_POST["lastName"]))&& (isset($_POST["email"])) && (isset($_POST["password"])))
     {
-        $login=$_POST["login"];
+        $firstName=$_POST["firstName"];
+        $lastName=$_POST["lastName"];
+        $email=$_POST["email"];
         $password=$_POST["password"];
-        $nom=$_POST["nom"];
-        $prenom=$_POST["prenom"];
-        $requette="insert into client values ('$nom','$prenom','$login','$password')";
+
+        $requette="insert into client values ('$FirstName','$LastName','$email','$password')";
         $result=mysqli_query($bdd,$requette);
-        ?>
-        <a href=index.php>suivant</a>
-    <?php
+         header('Location:index.php');
+
     }
+    else header('location:indexLogin.php');
     }
     ?>

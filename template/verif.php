@@ -5,24 +5,28 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
     {
         $email=$_POST["login"];
         $password=$_POST["password"];
-        $requette="SELECT * FROM client WHERE email='$login' AND passeword='$password'";
+        $requette="SELECT * FROM client WHERE email='$email' AND password='$password'";
         $result=mysqli_query($bdd,$requette);
         $nb = mysqli_num_rows($result);
+        if ($nb>0){
+
+           /** session_start();
+            $_SESSION['login_client'] = $login;
+            header('Location:index.php');**/
+           ?>
+            <a href=index.php>suivant</a>
+
+<?php
+        }
+        else echo "<h2>vous n'etes pas un membre</h2>";
     }
     else{
-        echo "<h3>login et/ou mot de passe érroné</h3>";
-        ?>
-        <br><center><a href=connexion.php>retour</a></center>
-        <?php
-    }
 
-    if ($nb>0){
+        //header('Location:indexLogin.php');
 
-        session_start();
-        $_SESSION['login_client'] = $login;
-        header('Location:index.php');
+     echo "<h2>eronnné </h2>";
+
     }
-    else  echo " vous n'étes un membre" ;
 
 }
 else
