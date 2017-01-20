@@ -56,6 +56,7 @@ $decorMaisonManager= new DecorMaisonManager($db);
           <div class="caption">
             <h1 class="animated fadeInLeftBig">Welcome to <span>Oxygen</span></h1>
             <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
+              <p> imen from imen </p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
