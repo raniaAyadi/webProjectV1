@@ -34,9 +34,11 @@ $db = $mySQLDatabase->getConnection();
 
 // SQL query to fetch information of registerd users and finds user match.
         //$client = $decorClientManager->verifClient($email, $password);
-        $requette="select * from client where email='$email' AND password='$password'";
-        $result=mysql_query($db,$requette);
-        $nb=mysql_num_rows($result);
+
+        $requette="SELECT * FROM client WHERE login='$login' AND password='$password'";
+        $result=mysqli_query($bdd,$requette);
+        $nb=mysqli_num_rows($result);
+
         //echo "wsel5" ;
 
         if ($nb==   1) {
