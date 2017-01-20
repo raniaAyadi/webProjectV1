@@ -22,7 +22,6 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/favicon.ico">
 
-  <p> 5raaaaa</p>
   <?php
   require_once('DecorEquipeManager.php');
   require_once('MySQLDatabase.php');
@@ -703,7 +702,13 @@ $decorMaisonManager= new DecorMaisonManager($db);
             <div class="post-thumb">
               <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a> 
               <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+
+
+                      <button>
+                      <span><i class="fa fa-comments-o"></i>3 Comments</span>
+                      </button>
+
+
                 <span><i class="fa fa-heart"></i> 0 Likes</span> 
               </div>
               <div class="post-icon">
@@ -750,12 +755,16 @@ $decorMaisonManager= new DecorMaisonManager($db);
               </div>
             </div>
             <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
+              <h3><a href="#">We Turns Walls into Interactive Stories</a></h3>
+
+             <!-- <span class="date">June 26, 2014</span>
+              <span class="cetagory">in <strong>Photography</strong></span> -->
+
             </div>
             <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p>
+                  Boring walls become a children's interactive delight through these light-emitting wall systems.
+              </p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
@@ -771,8 +780,8 @@ $decorMaisonManager= new DecorMaisonManager($db);
             </div>
             <div class="entry-header">
               <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
+             <!-- <span class="date">June 26, 2014</span>
+              <span class="cetagory">in <strong>Photography</strong></span> --->
             </div>
             <div class="entry-content">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
