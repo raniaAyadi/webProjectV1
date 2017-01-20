@@ -91,7 +91,8 @@ $decorMaisonManager= new DecorMaisonManager($db);
           </button>
           <a class="navbar-brand" href="index.php">
             <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
-          </a>                    
+          </a>
+
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
