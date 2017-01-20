@@ -37,7 +37,7 @@ class DecorClientManager
 
     }
 
-    public function verifClient()
+    public function verifClient($email,$password)
     {
 
         $req = $this->_db->query("select * from user where email='$email' AND password='$password'");
