@@ -49,31 +49,27 @@ $decorMaisonManager= new DecorMaisonManager($db);
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
   <!--/.preloader-->
 
-  <header id="home">
+<header id="home">
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="item active" style="background-image: url(images/slider/1.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>Oxygen</span></h1>
-            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url(images/slider/image1.jpg)">
+                <div class="caption">
+                    <h1 class="animated fadeInLeftBig">Welcome to <span>DecoService</span></h1>
+                    <p class="animated fadeInRightBig">our goal is to always provide our clients with Helpful, Expert, Reliable and Outstanding service</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+                </div>
+            </div>
+
+
+            <div class="item" style="background-image: url(images/slider/3.jpeg)">
+                <div class="caption">
+                    <h1 class="animated fadeInLeftBig">We are <span>Creative</span></h1>
+                    <p class="animated fadeInRightBig">our goal is to always provide our clients with Helpful, Expert, Reliable and Outstanding service</p>
+                    <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+                </div>
+            </div>
         </div>
-        <div class="item" style="background-image: url(images/slider/2.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Say Hello to <span>Oxygen</span></h1>
-            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
-        </div>
-        <div class="item" style="background-image: url(images/slider/3.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">We are <span>Creative</span></h1>
-            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
-        </div>
-      </div>
+
       <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
       <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
 
