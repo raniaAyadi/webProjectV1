@@ -42,7 +42,7 @@ class DecorCommentManager
 
         $req = $this->_db->query("SELECT * FROM comment where maisonId=$maisonId order by postTime desc");
 
-        while ($res = $req->fetch())
+        while ($res=$req->fetch())
         {
             //id, commentText, postTime, user, course
             $comments[] = new Comment($res['id'],$res['commentText'],$res['postTime'],

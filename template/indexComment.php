@@ -95,8 +95,8 @@ $decorCommentsManager =new DecorCommentManager($db);
 
                 $maisonId=$_GET["id"];
                 $maison=$decorMaisonManager->getMaison($maisonId);
-                $comments = $decorCommentsManager->getComment($maisonId);
-                foreach ($comments as  $comment) { ?>
+
+                 ?>
 
                 <!-- Title -->
                 <h1>Blog Post Title</h1>
@@ -127,7 +127,7 @@ $decorCommentsManager =new DecorCommentManager($db);
 
                 <hr>
                 <!-- Blog Comments -->
-                <?php } ?>
+
 
                 <!-- Comments Form -->
                 <div class="well">
@@ -143,8 +143,24 @@ $decorCommentsManager =new DecorCommentManager($db);
                 <hr>
 
                 <!-- Posted Comments -->
-
+                <?php
+                $comments = $decorCommentsManager->getListComment($maisonId);
+                foreach ($comments as  $comment) { ?>
                 <!-- Comment -->
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Start Bootstrap
+                            <small><!--August 25, 2014 at 9:30 PM--> <?php echo $comment->getPostTime()?></small>
+                        </h4>
+                        <?php echo $comment->getCommentText() ?>
+                    </div>
+                </div>
+                <?php } ?>
+                <!-- Comment -->
+<!--
                 <div class="media">
                     <a class="pull-left" href="#">
                         <img class="media-object" src="http://placehold.it/64x64" alt="">
@@ -154,21 +170,11 @@ $decorCommentsManager =new DecorCommentManager($db);
                             <small>August 25, 2014 at 9:30 PM</small>
                         </h4>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
                     </div>
                 </div>
 
-                <!-- Comment -->
-                <div class="media">
-                    <a class="pull-left" href="#">
-                        <img class="media-object" src="http://placehold.it/64x64" alt="">
-                    </a>
-                    <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
-                            <small>August 25, 2014 at 9:30 PM</small>
-                        </h4>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                        <!-- Nested Comment -->
-                        <div class="media">
+                 <div class="media">
                             <a class="pull-left" href="#">
                                 <img class="media-object" src="http://placehold.it/64x64" alt="">
                             </a>
@@ -179,9 +185,10 @@ $decorCommentsManager =new DecorCommentManager($db);
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
                             </div>
                         </div>
+
+-->
                         <!-- End Nested Comment -->
-                    </div>
-                </div>
+
 
             </div>
 
