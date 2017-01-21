@@ -35,7 +35,7 @@ class DecorMaisonManager
 
         //id, title, level, field, shortDescription, fullDescription, path, duration, rating, image
         return new Maison ($res['id'],$res['adresse'],$res['prix'],
-            $res['image'],/*$res['date'],$res['nomClient']*/$res['theme']);
+            $res['image'],$res['theme'],$res['nomClient'],$res['dateM'],$res['description']);
 
     }
 
@@ -53,7 +53,7 @@ class DecorMaisonManager
         while ($res = $req->fetch())
         {
             $maisons[] = new Maison($res['id'],$res['adresse'],$res['prix'],
-                $res['image']/*$res['date'],$res['nomClient']*/,$res['theme'] );
+                $res['image'],$res['theme'],$res['nomClient'],$res['dateM'],$res['description']);
         }
 
 

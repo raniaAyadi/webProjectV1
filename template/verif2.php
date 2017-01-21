@@ -8,7 +8,7 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
         $email1=$_POST["email"];
         $password1=$_POST["password"];
 
-        $requette="insert into client(firstName,lastName,email,password) values ('$first','$last','$email1','$password1')";
+        $requette="insert into client(firstName,lastName,email,password) values ('$firstName','$lastName','$email1','$password1')";
        // "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
         $result=mysqli_query($bdd,$requette);
         $donnee=mysqli_fetch_assoc($result);

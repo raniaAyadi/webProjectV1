@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  <div class="tab-content" id="result"></div>
   <div class="form">
       
       <ul class="tab-group">
