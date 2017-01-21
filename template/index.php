@@ -40,8 +40,6 @@ $idClient=$_SESSION['user_id'];
 
 <body>
 
-<p> hello <?php echo $firstName ?></p>
-<a href="indexComment.php">suivant</a>
 <?php
 
 $mySQLDatabase = new MySQLDatabase();
@@ -97,14 +95,16 @@ $decorCommentsManager =new DecorCommentManager($db);
 
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="">Welcome : <i><?php echo $firstName; ?></i></a></li>
             <li class="scroll active"><a href="#home">Home</a></li>
             <li class="scroll"><a href="#services">Service</a></li> 
             <li class="scroll"><a href="#about-us">About Us</a></li>                     
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>
             <li class="scroll"><a href="#team">Team</a></li>
             <li class="scroll"><a href="#blog">Blog</a></li>
-            <li class="scroll"><a href="#contact">Contact</a></li>       
+            <li class="scroll"><a href="#contact">Contact</a></li>
+              <li><a href="logout.php">Log Out</a></li>
           </ul>
         </div>
       </div>
@@ -816,7 +816,9 @@ $decorCommentsManager =new DecorCommentManager($db);
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="row">
             <div class="col-sm-6">
-              <form id="main-contact-form" name="contact-form" method="post" action="#">
+
+              <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -844,10 +846,10 @@ $decorCommentsManager =new DecorCommentManager($db);
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 <ul class="address">
-                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
-                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000  </li>
-                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@oxygen.com</a></li>
-                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.sitename.com</a></li>
+                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> 3041 Tunisia Sfax  </li>
+                  <li><i class="fa fa-phone"></i> <span> Phone:</span> 52728316  </li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="imen.bradai.ib@gmail.com"> support@DecoService.com</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.DecoService.com</a></li>
                 </ul>
               </div>                            
             </div>
@@ -878,7 +880,7 @@ $decorCommentsManager =new DecorCommentManager($db);
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <p>&copy; 2014 Oxygen Theme.</p>
+            <p>&copy; 2017 DecoService.</p>
           </div>
           <div class="col-sm-6">
             <p class="pull-right">Designed by <a href="http://www.themeum.com/">Themeum</a></p>
@@ -890,7 +892,11 @@ $decorCommentsManager =new DecorCommentManager($db);
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBNQt6FySkfJFTAqHu2aw-D9cOlPWNkw8o&exp&sensor=false&libraries=places">sensor=false"></script>
+
+
+
+
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>
