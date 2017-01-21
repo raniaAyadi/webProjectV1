@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 session_start();
-$firstName= $_SESSION['login_user'];
+$firstName=$_SESSION['login_user'];
 $idClient=$_SESSION['user_id'];
 ?>
 <html lang="en">
