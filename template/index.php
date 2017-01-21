@@ -251,7 +251,7 @@ $decorCommentsManager =new DecorCommentManager($db);
                       <p>Design, Photography</p>
                     </div>
                     <div class="folio-overview">
-                      <span class="folio-link"> <a href="../indexComment.php?id=<?php echo $maison->getId()?>"> +</a></span>
+                      <span class="folio-link"> <a href="indexComment.php?id=<?php echo $maison->getId()?>"> +</a></span>
                       <span class="folio-link"><a class="folio-read-more" href="indexComment.php" ><i class="fa fa-link"></i></a></span>
                       <span class="folio-expand"><a href="<?php echo $maison->getImage() ?>" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                     </div>

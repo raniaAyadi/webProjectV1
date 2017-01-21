@@ -20,7 +20,7 @@ class DecorCommentManager
     {
         // Exécute une requête de type SELECT avec une clause WHERE, et retourne un objet Course.
         $id = (int) $id;
-        $req = $this->_db->query('SELECT * FROM comment WHERE id ='.$id);
+        $req = $this->_db->query('SELECT * FROM comment WHERE maisonId ='.$id);
         $res = $req->fetch();
 
 
