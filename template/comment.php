@@ -27,13 +27,13 @@ class comment
      * @param $_client
      * @param $_maison
      */
-    public function __construct($_id, $_commentText, $_postTime, $_client, $_maison)
+    public function __construct($_id, $_commentText, $_postTime, $_clientId, $_maisonId)
     {
         $this->_id = $_id;
         $this->_commentText = $_commentText;
         $this->_postTime = $_postTime;
-        $this->_client = $_client;
-        $this->_maison = $_maison;
+        $this->_clientId = $_clientId;
+        $this->_maisonId = $_maisonId;
     }
 
     /**

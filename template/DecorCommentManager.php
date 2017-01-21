@@ -25,9 +25,8 @@ class DecorCommentManager
 
 
         //id, title, level, field, shortDescription, fullDescription, path, duration, rating, image
-        return new comment ($res['id'],$res['commentText'],$res['postTime'],$res['cli'],
-            $res['telephone'], $res['email'],$res['metier'],
-            $res['shortDescrip']);
+        return new comment ($res['id'],$res['commentText'],$res['postTime'],$res['clientId'],
+            $res['maisonId']);
 
     }
 

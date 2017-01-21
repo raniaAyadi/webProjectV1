@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e64a639a-2fa0-4670-a3c5-338702153d44" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/comment.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webProjectV1.iml" afterPath="$PROJECT_DIR$/.idea/webProjectV1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/DecorClientManager.php" afterPath="$PROJECT_DIR$/template/DecorClientManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/DecorEquipeManager.php" afterPath="$PROJECT_DIR$/template/DecorEquipeManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/DecorMaisonManager.php" afterPath="$PROJECT_DIR$/template/DecorMaisonManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/css/main.css" afterPath="$PROJECT_DIR$/template/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/DecorCommentManager.php" afterPath="$PROJECT_DIR$/template/DecorCommentManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/comment.php" afterPath="$PROJECT_DIR$/template/comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/index.php" afterPath="$PROJECT_DIR$/template/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/indexLogin.php" afterPath="$PROJECT_DIR$/template/indexLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/verif.php" afterPath="$PROJECT_DIR$/template/verif.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/verif2.php" afterPath="$PROJECT_DIR$/template/verif2.php" />
     </list>
     <ignored path="webProjectV1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,30 +29,61 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="828" column="22" selection-start-line="828" selection-start-column="22" selection-end-line="828" selection-end-column="22" />
+            <state relative-caret-position="133">
+              <caret line="253" column="124" selection-start-line="253" selection-start-column="124" selection-end-line="253" selection-end-column="124" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexLogin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Maison.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/Maison.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexLogin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/indexLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecorClientManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/DecorClientManager.php">
+      <file leaf-file-name="indexComment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/indexComment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Equipe.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/Equipe.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecorEquipeManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/DecorEquipeManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="46" column="0" selection-start-line="32" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
               <folding>
-                <marker date="1484949024415" expanded="true" signature="612:699" ph="SELECT * FRO... client" />
+                <marker date="1484949660452" expanded="true" signature="565:596" ph="SELECT * FRO... equipe" />
+                <marker date="1484949660452" expanded="true" signature="1108:1128" ph="SELECT * FRO... equipe" />
               </folding>
             </state>
           </provider>
@@ -78,8 +102,8 @@
       <file leaf-file-name="comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -89,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/template/verif.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="48" column="48" selection-start-line="47" selection-start-column="13" selection-end-line="48" selection-end-column="48" />
+              <caret line="48" column="48" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="48" />
               <folding>
                 <marker date="1484952914721" expanded="true" signature="959:1025" ph="SELECT * FRO... client" />
               </folding>
@@ -97,37 +121,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecorCommentManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DecorCommentManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/DecorCommentManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="351">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
-                <marker date="1484929698053" expanded="true" signature="454:523" ph="SELECT * FRO... comment" />
-                <marker date="1484929698053" expanded="true" signature="952:1068" ph="INSERT INTO comment... " />
+                <marker date="1484962311120" expanded="true" signature="454:486" ph="SELECT * FRO... comment" />
+                <marker date="1484962311120" expanded="true" signature="959:1028" ph="SELECT * FRO... comment" />
+                <marker date="1484962311120" expanded="true" signature="1457:1573" ph="INSERT INTO comment... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actionAddComment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/actionAddComment.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1484929605261" expanded="true" signature="751:899" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajaxAddComment.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/js/ajaxAddComment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,9 +158,12 @@
         <option value="$PROJECT_DIR$/template/indexLogin.php" />
         <option value="$PROJECT_DIR$/template/DecorMaisonManager.php" />
         <option value="$PROJECT_DIR$/template/DecorEquipeManager.php" />
-        <option value="$PROJECT_DIR$/template/index.php" />
         <option value="$PROJECT_DIR$/template/css/main.css" />
         <option value="$PROJECT_DIR$/template/verif.php" />
+        <option value="$PROJECT_DIR$/template/indexComment.php" />
+        <option value="$PROJECT_DIR$/template/comment.php" />
+        <option value="$PROJECT_DIR$/template/index.php" />
+        <option value="$PROJECT_DIR$/template/DecorCommentManager.php" />
       </list>
     </option>
   </component>
@@ -229,6 +235,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetCopieTry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetCopieTry" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetCopieTry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projetCopieTry" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,7 +350,7 @@
       <workItem from="1484911123171" duration="319000" />
       <workItem from="1484935551006" duration="331000" />
       <workItem from="1484936224865" duration="11666000" />
-      <workItem from="1484949032804" duration="3963000" />
+      <workItem from="1484949032804" duration="9731000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit from rania">
       <created>1484906147067</created>
@@ -373,11 +415,25 @@
       <option name="project" value="LOCAL" />
       <updated>1484944803966</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="session done hamdouulah">
+      <created>1484953668471</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1484953668471</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit try">
+      <created>1484962146034</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1484962146034</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19857000" />
+    <option name="totallyTimeSpent" value="25625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -386,7 +442,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09621451" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -446,7 +502,9 @@
     <MESSAGE value="add login en cour" />
     <MESSAGE value="log In faux" />
     <MESSAGE value="log In faux 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="log In faux 2" />
+    <MESSAGE value="session done hamdouulah" />
+    <MESSAGE value="commit try" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit try" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -605,17 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/DecorEquipeManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <marker date="1484949660452" expanded="true" signature="565:596" ph="SELECT * FRO... equipe" />
-            <marker date="1484949660452" expanded="true" signature="1108:1128" ph="SELECT * FRO... equipe" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23821">
@@ -656,14 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="828" column="22" selection-start-line="828" selection-start-column="22" selection-end-line="828" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/js/ajaxAddComment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -678,25 +717,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1484929605261" expanded="true" signature="751:899" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/DecorCommentManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          <folding>
-            <marker date="1484929698053" expanded="true" signature="454:523" ph="SELECT * FRO... comment" />
-            <marker date="1484929698053" expanded="true" signature="952:1068" ph="INSERT INTO comment... " />
           </folding>
         </state>
       </provider>
@@ -730,7 +750,7 @@
     <entry file="file://$PROJECT_DIR$/template/verif.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="48" column="48" selection-start-line="47" selection-start-column="13" selection-end-line="48" selection-end-column="48" />
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="48" />
           <folding>
             <marker date="1484952914721" expanded="true" signature="959:1025" ph="SELECT * FRO... client" />
           </folding>
@@ -739,9 +759,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/indexLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Maison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/indexComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/Equipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/DecorEquipeManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="46" column="0" selection-start-line="32" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1484949660452" expanded="true" signature="565:596" ph="SELECT * FRO... equipe" />
+            <marker date="1484949660452" expanded="true" signature="1108:1128" ph="SELECT * FRO... equipe" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="253" column="124" selection-start-line="253" selection-start-column="124" selection-end-line="253" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/DecorCommentManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <marker date="1484962311120" expanded="true" signature="454:486" ph="SELECT * FRO... comment" />
+            <marker date="1484962311120" expanded="true" signature="959:1028" ph="SELECT * FRO... comment" />
+            <marker date="1484962311120" expanded="true" signature="1457:1573" ph="INSERT INTO comment... " />
+          </folding>
         </state>
       </provider>
     </entry>
