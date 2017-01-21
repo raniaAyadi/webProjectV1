@@ -2,7 +2,16 @@
 <?php
 session_start();
 $firstName= $_SESSION['login_user'];
-$idClient=$_SESSION['user_id'];
+$clientId=$_SESSION['user_id'];
+
+/**if($bdd=mysqli_connect('localhost','root','','decoration')) {
+
+    $requette = "select firstName from client WHERE id='$clientId'";
+    $result = mysqli_query($bdd, $requette);
+    $donnee = mysqli_fetch_assoc($result);
+    $firstName =$donnee['firstName'];
+}**/
+
 ?>
 <html lang="en">
 <head>
@@ -132,9 +141,15 @@ $decorCommentsManager =new DecorCommentManager($db);
                 <!-- Comments Form -->
                 <div class="well">
                     <h4>Leave a Comment:</h4>
-                    <form role="form">
+
+                    <script type="text/javascript" src="js/ajaxAddComment.js"></script>
+                    <form role="form" method="" action="javascript:insertComment()">
+
                         <div class="form-group">
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3" name="comment" id="comment"></textarea>
+                            <input type="hidden" id="firstName" name="firstName" value="<?php echo $firstName ?>"/>
+                            <input type="hidden" id="clientId" name="clientId" value="<?php echo $clientId ?>"/>
+                            <input type="hidden" id="maisonId" name="maisonId" value="<?php echo $maisonId ?>"/>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -142,6 +157,7 @@ $decorCommentsManager =new DecorCommentManager($db);
 
                 <hr>
 
+                <div id="all_comments">
                 <!-- Posted Comments -->
                 <?php
                 $comments = $decorCommentsManager->getListComment($maisonId);
@@ -152,13 +168,14 @@ $decorCommentsManager =new DecorCommentManager($db);
                         <img class="media-object" src="http://placehold.it/64x64" alt="">
                     </a>
                     <div class="media-body">
-                        <h4 class="media-heading">Start Bootstrap
+                        <h4 class="media-heading"> <?php echo $comment->getFirstName() ?>
                             <small><!--August 25, 2014 at 9:30 PM--> <?php echo $comment->getPostTime()?></small>
                         </h4>
                         <?php echo $comment->getCommentText() ?>
                     </div>
                 </div>
                 <?php } ?>
+                    </div>
                 <!-- Comment -->
 <!--
                 <div class="media">

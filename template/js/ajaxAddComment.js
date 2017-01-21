@@ -22,9 +22,9 @@ function insertComment() {
     var xhrComment = createXHR();
 
     var comment = document.getElementById("comment").value;
-    var name = document.getElementById("username").value;
-    var clientId = document.getElementById("user_id").value;
-    var maisonId = document.getElementById("course_id").value;
+    var firstName = document.getElementById("firstName").value;
+    var clientId = document.getElementById("clientId").value;
+    var maisonId = document.getElementById("maisonId").value;
 
 
     xhrComment.onreadystatechange = function() {
@@ -34,12 +34,12 @@ function insertComment() {
             document.getElementById("all_comments").innerHTML=response+document.getElementById("all_comments").innerHTML;
 
             document.getElementById("comment").value="";
-            document.getElementById("username").value="";
+            document.getElementById("firstName").value="";
 
         }
     }
 
-    xhrComment.open('GET', 'actionAddComment.php?'+"comment="+comment+"&name="+name+"&user_id="+user_id+"&course_id="+course_id, true);
+    xhrComment.open('GET', 'actionAddComment.php?'+"comment="+comment+"&firstName="+firstName+"&clientId="+clientId+"&maisonId="+maisonId, true);
     xhrComment.send();
 
 }

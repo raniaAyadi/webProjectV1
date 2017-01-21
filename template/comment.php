@@ -18,6 +18,7 @@ class comment
 
     //ManyToOne //jointure JoinColumn(name="course_id")// la cle entrangere
     private $_maisonId;
+    private $_firstName;
 
     /**
      * Comment constructor.
@@ -27,12 +28,13 @@ class comment
      * @param $_client
      * @param $_maison
      */
-    public function __construct($_id, $_commentText, $_postTime, $_clientId, $_maisonId)
+    public function __construct($_id, $_commentText, $_postTime, $_clientId, $_firstName, $_maisonId)
     {
         $this->_id = $_id;
         $this->_commentText = $_commentText;
         $this->_postTime = $_postTime;
         $this->_clientId = $_clientId;
+        $this->_firstName = $_firstName;
         $this->_maisonId = $_maisonId;
     }
 
@@ -89,7 +91,7 @@ class comment
      */
     public function getClient()
     {
-        return $this->_client;
+        return $this->_clientId;
     }
 
     /**
@@ -100,12 +102,26 @@ class comment
         $this->_client = $client;
     }
 
+
+    public function getFirstName()
+    {
+        return $this->_firstName;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setFirstName($firstName)
+    {
+        $this->_firstName = $firstName;
+    }
+
     /**
      * @return mixed
      */
     public function getMaison()
     {
-        return $this->_maison;
+        return $this->_maisonId;
     }
 
     /**

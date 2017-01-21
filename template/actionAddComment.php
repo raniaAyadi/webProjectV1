@@ -1,37 +1,47 @@
 <?php include "MySQLDatabase.php"; ?>
-<?php include "CommentManager.php"; ?>
+<?php include "DecorCommentManager.php"; ?>
 
 <?php
+//if($bdd=mysqli_connect('localhost','root','','decoration')) {
+    if (isset($_REQUEST['comment']) && isset($_REQUEST['firstName']) && isset($_REQUEST['clientId']) && isset($_REQUEST['maisonId'])) {
 
-if(isset($_REQUEST['comment']) && isset($_REQUEST['name']) && isset($_REQUEST['clientId']) && isset($_REQUEST['maisonId']))
-{
+        $commentText = $_REQUEST['comment'];
+        $firstName = $_REQUEST['firstName'];
+        $clientId = $_REQUEST['clientId'];
+        $maisonId = $_REQUEST['maisonId'];
 
-    $user_comment=$_REQUEST['comment'];
-    $user_name=$_REQUEST['name'];
-    $user_id=$_REQUEST['clientId'];
-    $maison_id=$_REQUEST['maisonId'];
+        $date = new DateTime();
+        $time = $date->format('Y-m-d');
 
-    $date = new DateTime();
-    $time=$date->format('Y-m-d');
+        $comment = new Comment(null, $commentText, $time, $clientId, $firstName,$maisonId);
 
-    $comment = new Comment(null, $user_comment, $time, $user_id, $maison_id);
+        //BDD
+        $mySQLDatabase = new MySQLDatabase();
+        $bdd = $mySQLDatabase->getConnection();
 
+        //Manager
+        $decorComment = new DecorCommentManager($bdd);
 
-    //BDD
-    $mySQLDatabase = new MySQLDatabase();
-    $bdd = $mySQLDatabase->getConnection();
-
-    //Manager
-    $commentManager = new CommentManager($bdd);
-
-    $commentManager->addComment($comment);
-
-    echo "
-        <div class='comment_div'>
-            <p class='name'>$user_name</p>
-            <p class='comment'> $user_comment</p>
-            <p class='time'> $time </p>
-        </div>
+        $decorComment->addComment($comment);
+        //$requette = "insert into comment(NULL ,commentText,postTime,clientId,maisonId) values (NULL ,'$commentText','$time','$clientId','$maisonId')";
+        // "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
+        //$result = mysqli_query($bdd, $requette);
+        echo "
+        
+        
+        <div class=\"media\">
+                    <a class=\"pull-left\" href=\"#\">
+                        <img class=\"media-object\" src=\"http://placehold.it/64x64\" alt=\"\">
+                    </a>
+                    <div class=\"media-body\">
+                        <h4 class=\"media-heading\">$firstName
+                            <small>$time</small>
+                        </h4>
+                        $commentText
+                    </div>
+                </div>
+                
+        
 ";
 
-}
+    }

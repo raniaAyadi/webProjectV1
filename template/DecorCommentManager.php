@@ -25,7 +25,7 @@ class DecorCommentManager
 
 
         //id, title, level, field, shortDescription, fullDescription, path, duration, rating, image
-        return new comment ($res['id'],$res['commentText'],$res['postTime'],$res['clientId'],
+        return new comment ($res['id'],$res['commentText'],$res['postTime'],$res['clientId'],$res['firstName'],
             $res['maisonId']);
 
     }
@@ -46,7 +46,7 @@ class DecorCommentManager
         {
             //id, commentText, postTime, user, course
             $comments[] = new Comment($res['id'],$res['commentText'],$res['postTime'],
-                $res['clientId'], $res['maisonId']);
+                $res['clientId'],$res['firstName'], $res['maisonId']);
         }
 
 
@@ -59,11 +59,12 @@ class DecorCommentManager
     {
         // Préparation de la requête d'insertion.
 
-        $req = $this->_db->prepare('INSERT INTO comment SET commentText = :commentText, postTime = :postTime, clientId = :clientId, maisonId = :maisonId');
+        $req = $this->_db->prepare('INSERT INTO comment SET commentText = :commentText, postTime = :postTime, clientId = :clientId, firstName = :firstName,maisonId = :maisonId');
 
         $req->bindValue(':commentText',$c->getCommentText());
         $req->bindValue(':postTime', $c->getPostTime());
         $req->bindValue(':clientId', $c->getClient());
+        $req->bindValue(':firstName', $c->getFirstName());
         $req->bindValue(':maisonId', $c->getMaison());
 
 
