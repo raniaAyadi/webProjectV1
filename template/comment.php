@@ -14,10 +14,10 @@ class comment
     private $_postTime;
 
     //ManyToOne //jointure JoinColumn(name="user_id")// la cle entrangere
-    private $_client;
+    private $_clientId;
 
     //ManyToOne //jointure JoinColumn(name="course_id")// la cle entrangere
-    private $_maison;
+    private $_maisonId;
 
     /**
      * Comment constructor.
@@ -123,4 +123,3 @@ class comment
 
 ?>
 
-}

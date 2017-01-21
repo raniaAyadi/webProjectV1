@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+session_start();
+$firstName= $_SESSION['login_user'];
+$idClient=$_SESSION['user_id'];
+?>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -26,6 +31,7 @@
   require_once('DecorEquipeManager.php');
   require_once('MySQLDatabase.php');
   require_once ('DecorMaisonManager.php');
+  require_once ('DecorCommentManager.php');
   ?>
 
 
@@ -33,6 +39,9 @@
 </head><!--/head-->
 
 <body>
+
+<p> hello <?php echo $firstName ?></p>
+<a href="indexComment.php">suivant</a>
 <?php
 
 $mySQLDatabase = new MySQLDatabase();
@@ -40,6 +49,7 @@ $db = $mySQLDatabase->getConnection();
 
 $decorEquipeManager = new DecorEquipeManager($db);
 $decorMaisonManager= new DecorMaisonManager($db);
+$decorCommentsManager =new DecorCommentManager($db);
 ?>
   <!--.preloader-->
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
@@ -241,7 +251,8 @@ $decorMaisonManager= new DecorMaisonManager($db);
                       <p>Design, Photography</p>
                     </div>
                     <div class="folio-overview">
-                      <span class="folio-link"><a class="folio-read-more" href="portfolio-single.php?id=<? echo $maison->getId()?>mk=" ><i class="fa fa-link"></i></a></span>
+                      <a href="indexComment.php?id=<? echo $maison->getId()?>mk=">suivant</a>
+                      <span class="folio-link"><a class="folio-read-more" href="indexComment.php" ><i class="fa fa-link"></i></a></span>
                       <span class="folio-expand"><a href="<?php echo $maison->getImage() ?>" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
                     </div>
                   </div>

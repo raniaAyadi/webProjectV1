@@ -16,6 +16,22 @@ class DecorCommentManager
     }
 
 
+    public function getComment($id)
+    {
+        // Exécute une requête de type SELECT avec une clause WHERE, et retourne un objet Course.
+        $id = (int) $id;
+        $req = $this->_db->query('SELECT * FROM comment WHERE id ='.$id);
+        $res = $req->fetch();
+
+
+        //id, title, level, field, shortDescription, fullDescription, path, duration, rating, image
+        return new comment ($res['id'],$res['commentText'],$res['postTime'],$res['cli'],
+            $res['telephone'], $res['email'],$res['metier'],
+            $res['shortDescrip']);
+
+    }
+
+
     /**
      * @return array
      */
