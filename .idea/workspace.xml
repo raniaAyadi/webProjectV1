@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e64a639a-2fa0-4670-a3c5-338702153d44" name="Default" comment="indexe">
+    <list default="true" id="e64a639a-2fa0-4670-a3c5-338702153d44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/DecorCommentManager.php" afterPath="$PROJECT_DIR$/template/DecorCommentManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/index.php" afterPath="$PROJECT_DIR$/template/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/indexComment.php" afterPath="$PROJECT_DIR$/template/indexComment.php" />
     </list>
     <ignored path="webProjectV1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
+            <state relative-caret-position="450">
+              <caret line="243" column="82" selection-start-line="243" selection-start-column="50" selection-end-line="243" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -58,9 +57,23 @@
       <file leaf-file-name="indexComment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/indexComment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="96" column="66" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="66" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecorMaisonManager.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/DecorMaisonManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+              <folding>
+                <marker date="1484949649057" expanded="true" signature="560:591" ph="SELECT * FRO... maison" />
+                <marker date="1484949649057" expanded="true" signature="1071:1091" ph="SELECT * FRO... maison" />
+                <marker date="1484949649057" expanded="true" signature="2231:2307" ph="insert into maison... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,16 +97,6 @@
                 <marker date="1484949660452" expanded="true" signature="565:596" ph="SELECT * FRO... equipe" />
                 <marker date="1484949660452" expanded="true" signature="1108:1128" ph="SELECT * FRO... equipe" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portfolio-single.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/portfolio-single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -237,42 +240,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projetCopieTry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projetCopieTry" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projetCopieTry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projetCopieTry" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -349,7 +316,7 @@
       <workItem from="1484911123171" duration="319000" />
       <workItem from="1484935551006" duration="331000" />
       <workItem from="1484936224865" duration="11666000" />
-      <workItem from="1484949032804" duration="10067000" />
+      <workItem from="1484949032804" duration="10944000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit from rania">
       <created>1484906147067</created>
@@ -435,20 +402,27 @@
       <option name="project" value="LOCAL" />
       <updated>1484962323297</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="indexe">
+      <created>1484962677987</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1484962677987</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25961000" />
+    <option name="totallyTimeSpent" value="26838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09621451" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -470,7 +444,7 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09621451" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -511,7 +485,8 @@
     <MESSAGE value="session done hamdouulah" />
     <MESSAGE value="commit try" />
     <MESSAGE value="commit try again" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit try again" />
+    <MESSAGE value="indexe" />
+    <option name="LAST_COMMIT_MESSAGE" value="indexe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -658,18 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/DecorMaisonManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
-          <folding>
-            <marker date="1484949649057" expanded="true" signature="560:591" ph="SELECT * FRO... maison" />
-            <marker date="1484949649057" expanded="true" signature="1071:1091" ph="SELECT * FRO... maison" />
-            <marker date="1484949649057" expanded="true" signature="2231:2307" ph="insert into maison... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-23821">
@@ -764,14 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/indexLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/Maison.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -819,19 +774,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/indexComment.php">
+    <entry file="file://$PROJECT_DIR$/template/indexLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="206" column="21" selection-start-line="206" selection-start-column="21" selection-end-line="206" selection-end-column="21" />
+        <state relative-caret-position="450">
+          <caret line="243" column="82" selection-start-line="243" selection-start-column="50" selection-end-line="243" selection-end-column="82" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/indexComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="96" column="66" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/DecorMaisonManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding>
+            <marker date="1484949649057" expanded="true" signature="560:591" ph="SELECT * FRO... maison" />
+            <marker date="1484949649057" expanded="true" signature="1071:1091" ph="SELECT * FRO... maison" />
+            <marker date="1484949649057" expanded="true" signature="2231:2307" ph="insert into maison... " />
+          </folding>
         </state>
       </provider>
     </entry>

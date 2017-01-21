@@ -32,7 +32,7 @@ $idClient=$_SESSION['user_id'];
     <?php
     //require_once('DecorEquipeManager.php');
     require_once('MySQLDatabase.php');
-    //require_once ('DecorMaisonManager.php');
+    require_once ('DecorMaisonManager.php');
     require_once ('DecorCommentManager.php');
     ?>
 
@@ -87,16 +87,16 @@ $decorCommentsManager =new DecorCommentManager($db);
     <div class="container">
 
         <div class="row">
-            <?php
-
-            $maisonId=$_GET["id"];
-            $maison=$decorMaisonManager->getMaison($maisonId);
-            $comments = $decorCommentsManager->getComment($maisonId);
-            foreach ($comments as  $comment) { ?>
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
 
                 <!-- Blog Post -->
+                <?php
+
+                $maisonId=$_GET["id"];
+                $maison=$decorMaisonManager->getMaison($maisonId);
+                $comments = $decorCommentsManager->getComment($maisonId);
+                foreach ($comments as  $comment) { ?>
 
                 <!-- Title -->
                 <h1>Blog Post Title</h1>
@@ -126,8 +126,8 @@ $decorCommentsManager =new DecorCommentManager($db);
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
 
                 <hr>
-<?php } ?>
                 <!-- Blog Comments -->
+                <?php } ?>
 
                 <!-- Comments Form -->
                 <div class="well">
