@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e64a639a-2fa0-4670-a3c5-338702153d44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/css/style.css" afterPath="$PROJECT_DIR$/template/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/index.php" afterPath="$PROJECT_DIR$/template/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/indexLogin.php" afterPath="$PROJECT_DIR$/template/indexLogin.php" />
     </list>
     <ignored path="webProjectV1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -355,7 +352,7 @@
       <workItem from="1484949032804" duration="13066000" />
       <workItem from="1484965686445" duration="7277000" />
       <workItem from="1485021545034" duration="5260000" />
-      <workItem from="1485074197053" duration="5849000" />
+      <workItem from="1485074197053" duration="5877000" />
     </task>
     <task id="LOCAL-00001" summary="my first commit from rania">
       <created>1484906147067</created>
@@ -476,17 +473,24 @@
       <option name="project" value="LOCAL" />
       <updated>1485075381811</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="to imen">
+      <created>1485080247053</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1485080247053</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47346000" />
+    <option name="totallyTimeSpent" value="47374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -557,7 +561,8 @@
     <MESSAGE value="comments from base" />
     <MESSAGE value="actionaddcommit" />
     <MESSAGE value="version to complete the desgin" />
-    <option name="LAST_COMMIT_MESSAGE" value="version to complete the desgin" />
+    <MESSAGE value="to imen" />
+    <option name="LAST_COMMIT_MESSAGE" value="to imen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
