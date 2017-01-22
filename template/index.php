@@ -136,8 +136,6 @@ $decorServiceManager=new DecorServiceManager($db);
         <div class="service-info">
           <h3><?php echo $service->getTitre()?></h3>
           <p><?php echo $service->getDesrip()?></p>
-
-
         </div>
       </div>
 
