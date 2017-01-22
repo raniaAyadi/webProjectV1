@@ -32,6 +32,7 @@ $idClient=$_SESSION['user_id'];
   require_once('MySQLDatabase.php');
   require_once ('DecorMaisonManager.php');
   require_once ('DecorCommentManager.php');
+  require_once ('DecorServiceManager.php')
   ?>
 
 
@@ -48,6 +49,7 @@ $db = $mySQLDatabase->getConnection();
 $decorEquipeManager = new DecorEquipeManager($db);
 $decorMaisonManager= new DecorMaisonManager($db);
 $decorCommentsManager =new DecorCommentManager($db);
+$decorServiceManager=new DecorServiceManager($db);
 ?>
   <!--.preloader-->
   <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
@@ -110,21 +112,42 @@ $decorCommentsManager =new DecorCommentManager($db);
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
-  <section id="services">
+
+    <section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
+
             <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+            <p>we offer everything you will need to make your special event successful and memorable, also to have your dream Home </p>
           </div>
         </div> 
       </div>
       <div class="text-center our-services">
         <div class="row">
+
+
+       <?php  $services = $decorServiceManager->getListService();
+          foreach ($services as  $service) { ?>
+            <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+
+                  <img src="<?php echo $service->getImage()?>">
+        <div class="service-info">
+          <h3><?php echo $service->getTitre()?></h3>
+          <p><?php echo $service->getDesrip()?></p>
+
+
+        </div>
+      </div>
+
+      <?php } ?>
+
+    </div>
+<!--
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="service-icon">
-              <i class="fa fa-flask"></i>
+              <i class="fa fa-flask" ></i>
             </div>
             <div class="service-info">
               <h3>Brand Identity</h3>
@@ -178,7 +201,8 @@ $decorCommentsManager =new DecorCommentManager($db);
           </div>
         </div>
       </div>
-    </div>
+-->
+</div>
   </section><!--/#services-->
   <section id="about-us" class="parallax">
     <div class="container">
