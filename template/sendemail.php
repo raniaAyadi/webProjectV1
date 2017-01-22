@@ -1,15 +1,18 @@
 <?php
-if($bdd=mysqli_connect('localhost','root','','decoration')){
-    if  ((isset ($_POST["name"]) ) && (isset($_POST["email"]))&& (isset($_POST["subject"])) && (isset($_POST["message"]))) {
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $subject = $_POST["subject"];
-        $message = $_POST["message"];
-        $requette="insert into messages(name,email,subject,message) values('$name','$email','$subject','$message')";
-        mysqli_query($bdd,$requette);
-        //mysqli_query("INSERT INTO messages(name,email,subject,message)VALUES ($name, $email, $subject, $message)") ;
+$name       = @trim(stripslashes($_POST['name'])); 
+$from       = @trim(stripslashes($_POST['email'])); 
+$subject    = @trim(stripslashes($_POST['subject'])); 
+$message    = @trim(stripslashes($_POST['message'])); 
+$to   		= 'email@email.com';//replace with your email
 
-        echo "success" ;
-        // "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
-    }}
-    ?>
+$headers   = array();
+$headers[] = "MIME-Version: 1.0";
+$headers[] = "Content-type: text/plain; charset=iso-8859-1";
+$headers[] = "From: {$name} <{$from}>";
+$headers[] = "Reply-To: <{$from}>";
+$headers[] = "Subject: {$subject}";
+$headers[] = "X-Mailer: PHP/".phpversion();
+
+mail($to, $subject, $message, $headers);
+
+die;
