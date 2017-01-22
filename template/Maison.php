@@ -13,9 +13,10 @@ class maison
     private $_adresse;
     private $_prix;
     private $_image;
-    //private $_date;
-    //private $_nomClient;
+    private $_dateM;
+    private $_nomClient;
     private $_theme;
+    private $_description;
 
     /**
      * maison constructor.
@@ -23,20 +24,22 @@ class maison
      * @param $_adresse
      * @param $_prix
      * @param $_image
-     * @param $_date
+     * @param $_dateM
      * @param $_nomClient
      */
 
 
-    public function __construct($_id, $_adresse, $_prix, $_image, $_theme)
+    public function __construct($_id, $_adresse, $_prix, $_image, $_theme, $_nomClient, $_dateM,$_description)
     {
         $this->_id = $_id;
         $this->_adresse = $_adresse;
         $this->_prix = $_prix;
         $this->_image = $_image;
-        /*$this->_date = $_date;
-        $this->_nomClient = $_nomClient;*/
         $this->_theme = $_theme;
+        $this->_nomClient = $_nomClient;
+        $this->_date = $_dateM;
+        $this->_description=$_description;
+
 
     }
 
@@ -120,7 +123,6 @@ class maison
     /**
      * @return mixed
      */
-    /*************************************************
     public function getNomClient()
     {
         return $this->_nomClient;
@@ -131,6 +133,26 @@ class maison
     {
         $this->_nomClient = $nomClient;
     }
-*******************************************/
 
+    public function getDateM()
+    {
+        return $this->_dateM;
+    }
+
+
+    public function setDate($date)
+    {
+        $this->_dateM = $date;
+    }
+
+    public function getDescription()
+    {
+        return $this->_description;
+    }
+
+
+    public function setDescription($des)
+    {
+        $this->_description = $des;
+    }
 }

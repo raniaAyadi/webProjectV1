@@ -17,7 +17,7 @@ $postdata = json_decode($postdata);
 //$decorClientManager = new DecorClientManager($db);
 
 
-$error=''; // Variable To Store Error Message
+//$error=''; // Variable To Store Error Message
 
 
 //if (isset($_POST['submit'])) {
@@ -47,13 +47,14 @@ if($db=mysqli_connect('localhost','root','','decoration')){
         if ($nb==1) {
              $_SESSION['login_user']=$donnee['firstName']; // Initializing Session
              $_SESSION['user_id']=$donnee['id'];
-             header("location:index.php"); // Redirecting To Other Page
-        }
+           header("location:index.php"); // Redirecting To Other Page
+       }
        else {
             if($nb==0)
             {
-                $error = "Username or Password is invalid";
-
+                //$error = "Username or Password is invalid";
+                //echo $error ;
+                echo "vous" ;
             }
 
 

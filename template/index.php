@@ -58,7 +58,7 @@ $decorCommentsManager =new DecorCommentManager($db);
         <div class="carousel-inner">
             <div class="item active" style="background-image: url(images/slider/image1.jpg)">
                 <div class="caption">
-                    <h1 class="animated fadeInLeftBig">Welcome to <span>DecoService</span></h1>
+                    <h1 class="ted fadeInLeftBig">Welcome to <span>DecoService</span></h1>
                     <p class="animated fadeInRightBig">our goal is to always provide our clients with Helpful, Expert, Reliable and Outstanding service</p>
                     <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
                 </div>
