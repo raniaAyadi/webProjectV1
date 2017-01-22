@@ -11,36 +11,36 @@ function createXHR()
 }
 
 
-
-
 /* -------------------------- */
 /* INSERT */
 /* -------------------------- */
 
-function insertComment() {
+function verifLogin() {
 
     var xhrComment = createXHR();
 
-    var comment = document.getElementById("comment").value;
-    var firstName = document.getElementById("firstName").value;
-    var clientId = document.getElementById("clientId").value;
-    var maisonId = document.getElementById("maisonId").value;
+    var email2 = document.getElementById("email2").value;
+    var password2 = document.getElementById("password2").value;
 
 
     xhrComment.onreadystatechange = function() {
         if(xhrComment.readyState == 4 && xhrComment.status == 200){
             var response = xhrComment.responseText;
-// if it is ok show a message: "xx added + xx".
-            document.getElementById("result").innerHTML=response+document.getElementById("result").innerHTML;
+ // if it is ok show a message: "xx added + xx".
 
-            document.getElementById("comment").value="";
-            document.getElementById("firstName").value="";
+            if (response="succes") {
+                window.location.replace = 'index.php'
+            }
+
+            else
+                document.getElementById("result").innerHTML=response+document.getElementById("result").innerHTML;
+            document.getElementById("email2").value="";
+            document.getElementById("password2").value="";
 
         }
     }
 
-    xhrComment.open('GET', 'verif.php?'+"comment="+comment+"&firstName="+firstName+"&clientId="+clientId+"&maisonId="+maisonId, true);
+    xhrComment.open('GET','verif.php?'+"&email2="+email2+"&password2="+password2, true);
     xhrComment.send();
-
 }
 

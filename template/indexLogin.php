@@ -67,21 +67,24 @@
         
         <div id="login">   
           <h1>Welcome Back!</h1>
-          
-          <form action="verif.php" method="post">
-          
+
+<!--
+          <script type="text/javascript" src="js/ajaxVerifLogin.js"></script>
+          <form  method="" action="javascript:verifLogin()">
+-->
+          <form   action="verif.php" method="post">
             <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email" name="email2"required autocomplete="off"/>
+            <input type="email"  name="email2"required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password" name="password2" required autocomplete="off"/>
+            <input type="password"  name="password2" required autocomplete="off"/>
           </div>
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>

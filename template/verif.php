@@ -45,18 +45,18 @@ if($db=mysqli_connect('localhost','root','','decoration')){
         //echo "wsel5" ;
 
         if ($nb==1) {
+			  //echo "succes";
              $_SESSION['login_user']=$donnee['firstName']; // Initializing Session
              $_SESSION['user_id']=$donnee['id'];
-           header("location:index.php"); // Redirecting To Other Page
+             header("location:index.php"); // Redirecting To Other Page
        }
        else {
             if($nb==0)
             {
                 //$error = "Username or Password is invalid";
                 //echo $error ;
-                echo "vous" ;
+                echo "vous etes pas un membre veuiller cree compte" ;
             }
-
 
     }
    // }
