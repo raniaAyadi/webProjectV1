@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if($bdd=mysqli_connect('localhost','root','','decoration')){
     if  ((isset ($_POST["firstName"]) ) && (isset($_POST["lastName"]))&& (isset($_POST["email"])) && (isset($_POST["password"])))
     {
@@ -12,7 +12,7 @@ if($bdd=mysqli_connect('localhost','root','','decoration')){
        // "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
         $result=mysqli_query($bdd,$requette);
         $donnee=mysqli_fetch_assoc($result);
-
+        session_start();
         $_SESSION['login_user']=$donnee['firstName']; // Initializing Session
         $_SESSION['user_id']=$donnee['id'];
         header('Location:index.php');
