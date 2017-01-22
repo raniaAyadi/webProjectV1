@@ -13,7 +13,7 @@
   
 </head>
 
-<body>
+<body style=" background-image: url('images/login.jpg') ">
 
   <div class="tab-content" id="result"></div>
   <div class="form">
@@ -98,7 +98,6 @@
       
 </div> <!-- /form -->
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
     <script src="js/index.js"></script>
 
 </body>

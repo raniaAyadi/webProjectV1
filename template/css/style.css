@@ -7,8 +7,9 @@ html {
 }
 
 body {
-  background: #c1bdba;
+  background-repeat: no-repeat;
   font-family: 'Titillium Web', sans-serif;
+  background-image: none;
 }
 
 a {
@@ -17,12 +18,13 @@ a {
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
+
 a:hover {
   color: #179b77;
 }
 
 .form {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(171, 156, 48, 0.39);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -35,11 +37,13 @@ a:hover {
   padding: 0;
   margin: 0 0 40px 0;
 }
+
 .tab-group:after {
   content: "";
   display: table;
   clear: both;
 }
+
 .tab-group li a {
   display: block;
   text-decoration: none;
@@ -54,10 +58,12 @@ a:hover {
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
+
 .tab-group li a:hover {
   background: #179b77;
   color: #ffffff;
 }
+
 .tab-group .active a {
   background: #1ab188;
   color: #ffffff;
@@ -119,6 +125,7 @@ input, textarea {
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
+
 input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
@@ -163,6 +170,7 @@ textarea {
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
+
 .button:hover, .button:focus {
   background: #179b77;
 }
