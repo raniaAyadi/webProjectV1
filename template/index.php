@@ -826,7 +826,7 @@ $decorServiceManager=new DecorServiceManager($db);
   </section><!--/#blog-->
 
   <section id="contact">
-    <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+    <div id="google-map" class="wow fadeIn" data-latitude="34.747847" data-longitude="10.766163" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
     <div id="contact-us" class="parallax">
       <div class="container">
         <div class="row">
